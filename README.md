@@ -1,16 +1,59 @@
-# React + Vite
+# Crypto Dash
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A cryptocurrency dashboard built with React that displays real-time market data from the CoinGecko API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse top cryptocurrencies by market cap
+- Filter coins by name or symbol
+- Sort by market cap, price, or 24h change
+- View detailed coin information with 7-day price charts
+- Responsive grid layout
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js 18+
+- npm
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+```bash
+npm install
+```
+
+### Environment Setup
+
+Create a `.env` file in the root directory:
+
+```
+VITE_COINS_API_URL="https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd"
+VITE_COIN_API_URL="https://api.coingecko.com/api/v3/coins"
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Tech Stack
+
+- React 19
+- Vite 7
+- React Router 7
+- Chart.js / react-chartjs-2
+- CoinGecko API
